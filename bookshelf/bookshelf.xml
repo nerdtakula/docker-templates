@@ -17,7 +17,7 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>4040</HostPort>
+        <HostPort>8080</HostPort>
         <ContainerPort>4040</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -50,7 +50,7 @@
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:4040]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/airsonic-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/nerdtakula/docker-templates/master/bookshelf/bookshelf-icon.png</Icon>
   <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
   <DonateLink>---</DonateLink>
   <DonateImg>---</DonateImg>
