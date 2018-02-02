@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/nerdtakula/docker-templates/master/bookshelf/bookshelf.xml</TemplateURL>
+  <Beta>True</Beta>
+  <Category>MediaServer:Book</Category>
+  <Name>nerdtakula-bookshelf</Name>
+  <Description>Service to display</Description>
+  <Overview></Overview>
+  <Support>---</Support>
+  <Registry>https://registry.hub.docker.com/u/nerdtakula/bookshelf/</Registry>
+  <GitHub>https://github.com/nerdtakula/bookshelf</GitHub>
+  <Repository>nerdtakula/bookshelf</Repository>
+  <Project>https://github.com/nerdtakula/bookshelf</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>4040</HostPort>
+        <ContainerPort>4040</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:4040]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/airsonic-icon.png</Icon>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+  <DonateLink>---</DonateLink>
+  <DonateImg>---</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
