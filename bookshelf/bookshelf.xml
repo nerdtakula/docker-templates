@@ -43,6 +43,10 @@
       <ContainerDir>/opt/bookshelf/config</ContainerDir>
       <Mode>ro</Mode>
     </Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/opt/bookshelf/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
     <Volume>
       <HostDir>/mnt/user</HostDir>
       <ContainerDir>/opt/bookshelf/static/pdfs</ContainerDir>
