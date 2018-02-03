@@ -40,13 +40,13 @@
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
+      <ContainerDir>/opt/bookshelf/config</ContainerDir>
+      <Mode>ro</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/user</HostDir>
-      <ContainerDir>/media</ContainerDir>
-      <Mode>ro</Mode>
+      <ContainerDir>/opt/bookshelf/static/pdfs</ContainerDir>
+      <Mode>rw</Mode>
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
